@@ -1,0 +1,7 @@
+export APP_ID="bay1-sops"
+export APP_TOKEN="201f6543-8838-4db9-bf77-843753062b6a"
+export BK_PAAS_HOST="http://paas.class.o.qcloud.com"
+export BK_CC_HOST="http://cmdb.class.o.qcloud.com"
+export BK_JOB_HOST="http://job.class.o.qcloud.com"
+export RUN_VER="open"
+export OPEN_VER="community"
