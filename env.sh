@@ -1,7 +1,5 @@
-export DB_NAME="bay1sops"
-export DB_USERNAME="root"
-export DB_PASSWORD="root"
-export DB_HOST="localhost"
-export DB_PORT="3306"
-
-
+export BKAPP_DB_NAME="bay1sops"
+export BKAPP_DB_USERNAME="root"
+export BKAPP_DB_PASSWORD="root"
+export BKAPP_DB_HOST="localhost"
+export BKAPP_DB_PORT="3306"

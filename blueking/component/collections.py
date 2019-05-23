@@ -14,6 +14,7 @@ from .apis.cmsi import CollectionsCMSI
 from .apis.gse import CollectionsGSE
 from .apis.job import CollectionsJOB
 from .apis.sops import CollectionsSOPS
+from .apis.get_dfusage_bay1 import CollectionsGetDfusageBay1
 
 
 # Available components
@@ -25,4 +26,5 @@ AVAILABLE_COLLECTIONS = {
     'gse': CollectionsGSE,
     'job': CollectionsJOB,
     'sops': CollectionsSOPS,
+    'self_server': CollectionsGetDfusageBay1,
 }
