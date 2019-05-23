@@ -15,8 +15,7 @@ class GetDfuasgeService(Service):
 
     def execute(self, data, parent_data):
         executor = parent_data.get_one_of_inputs('executor')
-        user = User.object.get(username='328588917')
-        client = get_client_by_user(user.name)
+        client = get_client_by_user('328588917')
 
         host_ip = data.get_one_of_inputs('self_server_ip')
         host_system = data.get_one_of_inputs('self_server_system')
