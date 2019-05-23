@@ -14,7 +14,7 @@ class GetDfuasgeService(Service):
 
     def execute(self, data, parent_data):
         executor = parent_data.get_one_of_inputs('executor')
-        client = get_client_by_user('328588917')
+        client = get_client_by_user(executor)
 
         host_ip = data.get_one_of_inputs('self_server_ip')
         host_system = data.get_one_of_inputs('self_server_system')
@@ -28,7 +28,7 @@ class GetDfuasgeService(Service):
         api_result = client.self_server.get_dfusage_bay1(api_kwargs)
 
         if api_result['result']:
-            data.set_outputs('data', api_result['data'])
+            data.set_outputs('data', api_result)
             return True
         else:
             data.set_outputs('ex_data', api_result['message'])
