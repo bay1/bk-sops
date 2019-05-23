@@ -5,6 +5,7 @@ from blueapps.utils.esbclient import get_client_by_user
 from pipeline.conf import settings
 from pipeline.core.flow.activity import Service
 from pipeline.component_framework.component import Component
+from blueapps.account.models import User
 
 __group_name__ = _(u"个人服务(SELFAPI)")
 
@@ -14,7 +15,8 @@ class GetDfuasgeService(Service):
 
     def execute(self, data, parent_data):
         executor = parent_data.get_one_of_inputs('executor')
-        client = get_client_by_user(executor)
+        user = User.object.get(username='328588917')
+        client = get_client_by_user(user.name)
 
         host_ip = data.get_one_of_inputs('self_server_ip')
         host_system = data.get_one_of_inputs('self_server_system')
