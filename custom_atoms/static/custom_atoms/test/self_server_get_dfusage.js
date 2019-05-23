@@ -5,9 +5,8 @@
             type: "input",
             attrs: {
                 name: "主机IP",
-                placeholder: "提示：10.0.1.19",
                 hookable: true,
-                default: '10.0.1.19',
+                default: '10.0.1.192',
                 validation: [
                     {
                         type: "required"
