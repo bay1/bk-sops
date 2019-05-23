@@ -16,15 +16,10 @@
         },
         {
             tag_code: "self_server_system",
-            type: "radio",
+            type: "input",
             attrs: {
                 name: "主机系统",
-                items: [
-                    {value: "1", name: "linux centos"},
-                    {value: "2", name: "Windows"},
-                    {value: "3", name: "linux ubuntu"},
-                ],
-                default: "1",
+                default: "linux centos",
                 hookable: true,
                 validation: [
                     {

@@ -28,7 +28,7 @@ class GetDfuasgeService(Service):
         api_result = client.self_server.get_dfusage_bay1(api_kwargs)
 
         if api_result['result']:
-            data.set_outputs('data', api_result['data'][0]['disk_usage'])
+            data.set_outputs('data', api_result['data'])
             data.set_outputs('message', api_result['message'])
             return True
         else:
@@ -37,9 +37,9 @@ class GetDfuasgeService(Service):
 
     def outputs_format(self):
         return [
-            self.OutputItem(name=_(u'查询结果'), key='data', type='str'),
-            self.OutputItem(name=_(u'异常信息'), key='ex_data', type='str'),
-            self.OutputItem(name=_(u'返回信息'), key='message', type='str')
+            self.OutputItem(name=_(u'查询结果'), key='data', type='list'),
+            self.OutputItem(name=_(u'返回信息'), key='message', type='str'),
+            self.OutputItem(name=_(u'异常信息'), key='ex_data', type='str')
         ]
 
 
