@@ -5,7 +5,6 @@ from blueapps.utils.esbclient import get_client_by_user
 from pipeline.conf import settings
 from pipeline.core.flow.activity import Service
 from pipeline.component_framework.component import Component
-from blueapps.account.models import User
 
 __group_name__ = _(u"个人服务(SELFAPI)")
 
