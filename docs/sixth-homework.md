@@ -42,7 +42,7 @@ source env.sh
 
 >根目录下执行
 
-```bash
+‵‵‵bash
 python manage.py startapp custom_atoms 
 ```
 
