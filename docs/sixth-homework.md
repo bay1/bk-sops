@@ -30,9 +30,9 @@ https://github.com/Tencent/bk-sops/releases
 >修改数据库配置等，settings_production.py & settings_saas.py 获取环境变量
 可执行以下命令在环境中注入变量，文件内容需要在自己修改
 
-```bash
+```python
 source env.sh
-‵‵‵
+```
 
 >相对应的你需要在开发者中心添加应用环境变量
 
@@ -212,7 +212,6 @@ python manage.py celery worker -l info
 即使用以前作业已经开通白名单的应用token
 
 >找助手，新建数据库，修改conf/文件夹 内相应文件
->或者直接按照上文提到的环境变量方式
->上传代码部署
+或者直接按照上文提到的环境变量方式, 上传代码部署
 
 ![效果](https://smartpublic-10032816.file.myqcloud.com/custom/20190523124801/17266/20190523124801/--1acba5ffaae1b0686781598230bf6975.png)
