@@ -19,6 +19,8 @@ RUN_VER = 'community'
 # 应用基本信息配置 (请按照说明修改)
 # ==============================================================================
 # 在蓝鲸智云开发者中心 -> 点击应用ID -> 基本信息 中获取 APP_ID 和 APP_TOKEN 的值
+# (下面的内容修改为你自己的，正式开发勿泄漏)
+
 APP_ID = 'bay1sops'
 APP_TOKEN = '99c71fb1-a19a-4b3a-9b3a-4760615ac647'
 BK_PAAS_HOST = 'http://paas.class.o.qcloud.com'

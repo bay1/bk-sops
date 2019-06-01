@@ -1,3 +1,5 @@
+## [开发一个标准运维插件](docs/sixth-homework.md)
+
 # 蓝鲸智云标准运维（社区版）
 ![](docs/resource/img/bk_sops.png)
 ---
