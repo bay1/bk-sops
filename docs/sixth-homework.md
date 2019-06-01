@@ -42,7 +42,7 @@ source env.sh
 
 >根目录下执行
 
-```bash
+‵‵‵bash
 python manage.py startapp custom_atoms 
 ```
 
@@ -212,7 +212,6 @@ python manage.py celery worker -l info
 即使用以前作业已经开通白名单的应用token
 
 >找助手，新建数据库，修改conf/文件夹 内相应文件
->或者直接按照上文提到的环境变量方式
->上传代码部署
+或者直接按照上文提到的环境变量方式, 上传代码部署
 
 ![效果](https://smartpublic-10032816.file.myqcloud.com/custom/20190523124801/17266/20190523124801/--1acba5ffaae1b0686781598230bf6975.png)
